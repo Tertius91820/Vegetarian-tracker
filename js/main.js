@@ -46,7 +46,7 @@ class ProductInfo {
             tableRef.deleteRow(i);
         }
         if (!(this.ingredients == null)) {
-            for(var key in this.ingredients) {
+            for(let key in this.ingredients) {
                 let newRow = tableRef.insertRow(-1);
                 let newICell = newRow.insertCell(0);
                 let newVCell = newRow.insertCell(1);
